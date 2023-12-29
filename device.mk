@@ -37,6 +37,10 @@ $(call inherit-product, frameworks/native/build/phone-xhdpi-4096-dalvik-heap.mk)
 # GMS
 PRODUCT_GMS_CLIENTID_BASE := android-hmd
 
+# ih8sn
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/ih8sn.conf.PL2:$(TARGET_COPY_OUT_SYSTEM)/etc/ih8sn.conf
+
 # Init
 PRODUCT_PACKAGES += \
     init.PL2.target.rc
